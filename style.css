@@ -1,0 +1,96 @@
+@font-face {
+    font-family: Vertopal-Italic-reg ;
+    src: url(./vertopal.com_PPMigra-Regular.fb0ee287.ttf);
+}
+
+@font-face {
+    font-family: Vertopal-Regular ;
+    src: url(./vertopal.com_TTCommons-Regular.7ec989a7.ttf);
+}
+
+@font-face {
+    font-family: Vertopal-Bold ;
+    src: url(./vertopal.com_SharpGrotesk-Bold.164b198a.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    background-color: #e7e4e5ff;
+}
+#navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4vh;
+}
+#leftnav {
+    font-size: 1.5vw;
+    font-family: Vertopal-Regular;
+}
+
+#centrnav {
+    font-size: 1.8vw;
+    font-family: Vertopal-Italic-reg;
+    font-weight: 600;
+}
+#rightnav {
+    font-size: 1.5vw;
+    font-family: Vertopal-Regular;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 50%;
+    
+    
+    transform: translate(-50%, -50%);
+}
+
+
+#center  h1 {
+    font-size: 10vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: Vertopal-Italic-reg;
+    line-height: .8;
+}
+
+#center  h1  span {
+    font-family: Vertopal-Bold;
+}
+
+.imagediv {
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+}
+
+.imagediv img {
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
